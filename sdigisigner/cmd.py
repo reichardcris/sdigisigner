@@ -13,12 +13,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 import time
 
-from pdf2image import convert_from_path, convert_from_bytes
-from pdf2image.exceptions import (
-    PDFInfoNotInstalledError,
-    PDFPageCountError,
-    PDFSyntaxError
-)
 
 @click.group()
 @click.option('--link', '-l', help="Set the link of the digisigner API")
